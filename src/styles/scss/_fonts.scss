@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Monaco;
+  src: local(Monaco),
+    url('../../assets/fonts/Monaco\ Regular.woff2') format("woff2"),
+    url('../../assets/fonts/Monaco\ Regular.woff') format("woff"),
+    url('../../assets/fonts/Monaco\ Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Raleway ExtraLightItalic;
+  src: local(Raleway-ExtraLightItalic),
+    url('../../assets/fonts/Raleway\ ExtraLight\ Italic.woff2') format("woff2"),
+    url('../../assets/fonts/Raleway\ ExtraLight\ Italic.woff') format("woff"),
+    url('../../assets/fonts/Raleway\ ExtraLight\ Italic.ttf') format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Raleway Light;
+  src: local(Raleway-Light),
+    url('../../assets/fonts/Raleway\ Light.woff2') format("woff2"),
+    url('../../assets/fonts/Raleway\ Light.woff') format("woff"),
+    url('../../assets/fonts/Raleway\ Light.ttf') format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: local(Raleway-Regular),
+    url('../../assets/fonts/Raleway\ Regular.woff2') format("woff2"),
+    url('../../assets/fonts/Raleway\ Regular.woff') format("woff"),
+    url('../../assets/fonts/Raleway\ Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
