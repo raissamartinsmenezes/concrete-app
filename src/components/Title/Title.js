@@ -1,5 +1,6 @@
 import React from 'react';
 // importar o style
+import './Title.scss'
 
 const Title = (props) => {
     return (

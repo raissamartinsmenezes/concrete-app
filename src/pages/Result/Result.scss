@@ -1,0 +1,13 @@
+@import '../../styles/scss/variables';
+@import '../../styles/scss/fonts';
+// @import '../../styles/scss/base';
+@import '../../styles/scss/extends';
+
+.search-component-result {
+    width: 1152px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin: 35px 25px;
+}
