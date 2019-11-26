@@ -1,7 +1,7 @@
 import React from 'react';
 import searchIcon from '../../assets/icons/search-icon.svg';
 
-export default function Search(props) {
+const Search = (props) => {
     return (
         <div>
             <input className={props.classInput}></input>
@@ -9,3 +9,5 @@ export default function Search(props) {
         </div>
     )
 }
+
+export default Search

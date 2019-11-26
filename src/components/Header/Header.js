@@ -1,10 +1,12 @@
 import React from 'react';
 // importar o style
 
-export default function Header(props) {
+const Header = (props) => {
     return (
         <section>
-            <h1 className={props.classGithub}>{props.nome} <span className={props.classSearch}>{props.span}</span></h1>
+            <h1 className={props.classGithub}>{props.nome}<span className={props.classSearch}> {props.span}</span></h1>
         </section>
     )
 }
+
+export default Header

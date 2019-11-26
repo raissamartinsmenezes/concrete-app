@@ -2,7 +2,7 @@ import React from 'react';
 // importar os componentes
 import './_Home.scss';
 import Header from '../../components/Header/Header';
-import Search from '../../components/Header/Search';
+import Search from '../../components/Search/Search';
 
 export default function Home() {
     return (
