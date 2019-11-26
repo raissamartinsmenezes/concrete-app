@@ -1,11 +1,11 @@
 import React from 'react';
 // importar os componentes
-import Header from '../../components/Header/Header'
+import Title from '../../components/Title/Title'
 
 export default function Result() {
     return (
-        <Header
-        nome='Github'
+        <Title
+        name='Github'
         span='Search'
         classSearch='Text-Style'
         classGithub='Text-Style-3'

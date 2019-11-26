@@ -1,21 +1,21 @@
 import React from 'react';
 // importar os componentes
-import './_Home.scss';
-import Header from '../../components/Header/Header';
+import './Home.scss';
+import Title from '../../components/Title/Title';
 import Search from '../../components/Search/Search';
 
 export default function Home() {
     return (
-        <main>
-            <Header
-                nome='Github'
-                span='Search'
-                classSearch='text-style-1'
-                classGithub='Text-Style-3'
+        <main className='container section-search'>
+            <Title
+                contentTitle='Github'
+                contentSpan='Search'
+                classGithub='search-title'
+                classSearch='search-span'
             />
             <Search
-                classInput='Search-Input'
-                classButton='button'
+                classInput='search-input'
+                classButton='search-button'
             />
         </main>
     )
