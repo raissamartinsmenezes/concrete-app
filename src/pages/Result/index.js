@@ -1,24 +1,18 @@
 import React from 'react';
-// importar os componentes
-import Title from '../../components/Title/Title'
+import './Result.scss'
+import Logo from '../../components/Logo/Logo'
 import Search from '../../components/Search/Search'
 import Profile from './Profile/Profile'
 import Repositories from './Repositories/Repositories'
-// import UserPhoto from '../../components/UserPhoto/UserPhoto'
-import './Result.scss'
-// import IconText from '../../components/IconText/IconText';
-// import '../Home/Home.scss'
-
-// import organizationIcon from '../../assets/icons/organization-icon.svg'
 
 export default function Result() {
     return (
-        <div>
+        <div className='container'>
             <div className='search-component-result'>
-                <Title
+                <Logo
                     contentTitle='Github'
                     contentSpan='Search'
-                    classGithub='search-title-result'
+                    classGithub='search-logo-result'
                     classSearch='search-span'
                 />
                 <Search
@@ -26,7 +20,7 @@ export default function Result() {
                     classButton='search-button'
                 />
             </div>
-            <div>
+            <div className='content'>
                 <Profile
                 ></Profile>
                 <Repositories></Repositories>
