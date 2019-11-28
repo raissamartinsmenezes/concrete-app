@@ -22,5 +22,21 @@
         width: 280px;
         height: 280px;
     }
+
+    .profile-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        font-size: 35px;
+        color: black;
+        margin-top: 12px;
+    }
+
+    .profile-paragraph {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        margin-top: 7px;
+        color: $gray;
+    }
 }
 

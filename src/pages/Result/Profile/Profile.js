@@ -19,6 +19,8 @@ const Profile = (props) => {
             <Description
                 title='Título do babado'
                 description='Descrição do babado'
+                classTitle='profile-title'
+                classParagraph='profile-paragraph'
             />
             <IconText
                 icon={organizationIcon}
