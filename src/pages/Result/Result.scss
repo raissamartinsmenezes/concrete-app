@@ -16,7 +16,9 @@
 }
 
 .content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 35px;
 
     .profile-picture {
         width: 280px;

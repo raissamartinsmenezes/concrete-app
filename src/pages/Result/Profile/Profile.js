@@ -22,26 +22,33 @@ const Profile = (props) => {
                 classTitle='profile-title'
                 classParagraph='profile-paragraph'
             />
-            <IconText
-                icon={organizationIcon}
-                alt='organization icon'
-            >The Galactic Empire</IconText>
-            <IconText
-                icon={locationIcon}
-                alt='organization icon'
-            >Tatooine</IconText>
-            <IconText
-                icon={starIcon}
-                alt='organization icon'
-            >1.000.000</IconText>
-            <IconText
-                icon={repositorieIcon}
-                alt='organization icon'
-            >4</IconText>
-            <IconText
-                icon={followersIcon}
-                alt='organization icon'
-            >9.999.999</IconText>
+            <div className='icon-box'>
+                <IconText
+                    icon={organizationIcon}
+                    alt='organization icon'
+                    classIcon='icon'
+                >The Galactic Empire</IconText>
+                <IconText
+                    icon={locationIcon}
+                    alt='organization icon'
+                    classIcon='icon'
+                >Tatooine</IconText>
+                <IconText
+                    icon={starIcon}
+                    alt='organization icon'
+                    classIcon='icon'
+                >1.000.000</IconText>
+                <IconText
+                    icon={repositorieIcon}
+                    alt='organization icon'
+                    classIcon='icon'
+                >4</IconText>
+                <IconText
+                    icon={followersIcon}
+                    alt='organization icon'
+                    classIcon='icon'
+                >9.999.999</IconText>
+            </div>
         </div>
     )
 }

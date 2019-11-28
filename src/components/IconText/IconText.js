@@ -1,10 +1,11 @@
 import React from 'react';
+import './IconText.scss';
 
 const IconText = (props) => {
     return (
-        <div>
-            <img src={props.icon} alt={props.alt}></img>
-            <p>{props.children}</p>
+        <div className='icon-text-box'>
+            <img src={props.icon} alt={props.alt} className={props.classIcon}></img>
+            <p className='icon-text'>{props.children}</p>
         </div>
     )
 }

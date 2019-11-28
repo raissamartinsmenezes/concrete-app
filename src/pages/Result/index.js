@@ -26,7 +26,9 @@ export default function Result() {
                 <Profile
                     classPicture='profile-picture'
                 ></Profile>
-                <Repositories></Repositories>
+                <Repositories
+        
+                ></Repositories>
             </div>
         </div>
     )
