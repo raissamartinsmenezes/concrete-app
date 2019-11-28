@@ -27,7 +27,7 @@ export default function Result() {
                     classPicture='profile-picture'
                 ></Profile>
                 <Repositories
-        
+                    
                 ></Repositories>
             </div>
         </div>
