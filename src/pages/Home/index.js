@@ -3,6 +3,7 @@ import './Home.scss';
 import Logo from '../../components/Logo/Logo';
 import Search from '../../components/Search/Search';
 import axios from 'axios'
+// import { searchRepos } from '../../service/searchRepos'
 
 class Home extends React.Component {
     constructor(props){
@@ -19,22 +20,25 @@ class Home extends React.Component {
         this.setState({user})
     }
 
-    searchUser = async () => {
-        const { user } = this.state
-
-        try {
-            const {data: repos} = await axios.get(
-                `https://api.github.com/users/${user}/repos`
-            )
-            this.setState({repos, error: ''})
-            console.log(repos)
-        } catch (error) {
-            this.setState({
-                error: 'usuário não encontrado',
-                repos: []
-            })
+    // componentDidMount(){ 
+        searchUser = async () => {
+            const { user } = this.state
+    
+            try {
+                const {data: repos} = await axios.get(
+                    `https://api.github.com/users/${user}/repos`
+                )
+                this.setState({repos, error: ''})
+                console.log(repos)
+            } catch (error) {
+                this.setState({
+                    error: 'usuário não encontrado',
+                    repos: []
+                })
+            }
         }
-    }
+    // }
+
 
     render() {
         const { user, repos, error } = this.state;

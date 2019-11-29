@@ -1,4 +1,15 @@
+# Concrete Challenge
+
+> a client-side application that consults a GitHub API and the following repositories of a given user. 
+
+![yarn badge](https://img.shields.io/badge/yarn-1.19.1-brightgreen)
+![yarn badge](https://img.shields.io/badge/yarn-1.19.1-brightgreen)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Build With
+
+- React.js - Framework 
 
 ## Available Scripts
 
