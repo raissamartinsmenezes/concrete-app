@@ -10,11 +10,12 @@ const Search = (props) => {
                 placeholder={props.placeholder} 
                 type={props.type} 
                 className={props.classInput}
-                value={props.user}
-                onChange={e => props.changeUser(e.target.value)}>
+                //value={props.user}
+                onChange={props.changeUser}>
             </input>
-            <Link to='/result'>
-            <button className={props.classButton} onClick={props.buttonAction}><img src={searchIcon} alt='search icon'></img></button></Link>
+            {/* <Link to='/result'> */}
+            <button className={props.classButton} onClick={props.buttonAction}><img src={searchIcon} alt='search icon'></img></button>
+            {/* </Link> */}
         </div>
     )
 }

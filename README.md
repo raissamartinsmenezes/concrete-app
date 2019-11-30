@@ -3,17 +3,28 @@
 > a client-side application that consults a GitHub API and the following repositories of a given user. 
 
 ![yarn badge](https://img.shields.io/badge/yarn-1.19.1-brightgreen)
-![yarn badge](https://img.shields.io/badge/yarn-1.19.1-brightgreen)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Build With
 
-- React.js - Framework 
+- [React.js](https://github.com/facebook/react) - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [axios](https://github.com/axios/axios) - Promise based HTTP client for the browser.
+- [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start) - The components router. 
+
+## Resources
+
+- CSS
+- Fonts
+- Layout
+
+## Installation
+
+### Project Requirements
+
+To run this project you will need [Node.js](https://nodejs.org/en/) ![Node.js](https://img.shields.io/badge/node-v12.13.1-green) installed in your computer, if not you can use the link to redirect to the installer, after that, the environment it will ready for start.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory `./concrete-app`, you can run:
 
 ### `yarn start`
 
@@ -23,12 +34,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+<!-- ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information. -->
 
-### `yarn build`
+<!-- ### `yarn build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -36,9 +47,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information. -->
 
-### `yarn eject`
+<!-- ### `yarn eject` -->
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 

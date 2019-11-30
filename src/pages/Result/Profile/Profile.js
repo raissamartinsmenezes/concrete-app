@@ -15,12 +15,12 @@ const Profile = (props) => {
             {/* {props.user.map(user => ( */}
                 <div>
                     <UserPhoto 
-                        image='https://avatars2.githubusercontent.com/u/47835655?s=460&v=4'
+                        imageUrl={props.imageUrl}
                         classPicture={props.classPicture}
                     />
                     <Description
-                        title='Título do babado'
-                        description='Descrição do babado'
+                        title={props.name}
+                        description={props.bio}
                         classTitle='profile-title'
                         classParagraph='profile-paragraph'
                     />

@@ -10,34 +10,40 @@ class Home extends React.Component {
         super(props)
         this.state = {
             user: '',
-            repos: [],
+            res: '',
+            // repos: [],
             error: '',
             // value: ''
         }
     }
 
     changeUser = user => {
-        this.setState({user})
+        this.setState({user: user.target.value})
     }
 
-    // componentDidMount(){ 
-        searchUser = async () => {
-            const { user } = this.state
+    searchUser = async () => {
+        const { user } = this.state
     
-            try {
-                const {data: repos} = await axios.get(
-                    `https://api.github.com/users/${user}/repos`
-                )
-                this.setState({repos, error: ''})
-                console.log(repos)
-            } catch (error) {
-                this.setState({
-                    error: 'usuário não encontrado',
-                    repos: []
-                })
-            }
+        try {
+            const { data: res } = await axios.get(
+                `https://api.github.com/users/${user}`
+            )
+        
+            this.setState({res, error: ''})
+            this.props.history.push({
+                pathname: '/result',
+                state: {
+                    res
+                }
+            })    
+            console.log(res)
+        } catch (error) {
+            this.setState({
+                error: 'usuário não encontrado',
+                res: ''
+            })
         }
-    // }
+    }
 
 
     render() {
@@ -55,7 +61,7 @@ class Home extends React.Component {
                         type='text'
                         classInput='search-input'
                         classButton='search-button'
-                        value='user'
+                       // value='user'
                         placeholder='Digite aqui um usuário para consultar seus repositórios'
                         changeUser={this.changeUser}
                         user={user}
