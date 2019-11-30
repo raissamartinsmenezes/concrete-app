@@ -47,7 +47,7 @@ class Home extends React.Component {
 
 
     render() {
-        const { user, repos, error } = this.state;
+        const { user } = this.state;
         return (
             <div className='container'>
                 <div className='search'>

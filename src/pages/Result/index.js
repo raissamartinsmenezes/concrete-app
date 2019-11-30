@@ -3,6 +3,7 @@ import './Result.scss'
 import { Link } from 'react-router-dom'
 import Logo from '../../components/Logo/Logo'
 import Search from '../../components/Search/Search'
+import UserNotFound from '../../components/UserNotFound/UserNotFound'
 import Profile from './Profile/Profile'
 import Repositories from './Repositories/Repositories'
 import axios from 'axios'
@@ -43,7 +44,7 @@ class Result extends React.Component {
             // console.log(this.history.location.state.res.avatar_url)
         } catch (error) {
             this.setState({
-                error: 'usuário não encontrado',
+                error: 'User not found :(',
                 repos: []
             })
         }
@@ -62,7 +63,7 @@ class Result extends React.Component {
             console.log(response)
         } catch (error) {
             this.setState({
-                error: 'usuário não encontrado'
+                error: 'User not found :('
                 // res: ''
             })
         }
@@ -90,7 +91,7 @@ class Result extends React.Component {
         console.log(this.props.location.state.res.avatar_url)
         return (
             <div className='container'>
-                <div className='search-component-result'>
+                <div className='search-component-result'> 
                     <Link style={{ textDecoration: 'none', color: 'black' }} to='/'>
                         <Logo
                             contentTitle='Github'
@@ -108,17 +109,22 @@ class Result extends React.Component {
                         buttonAction={() => this.searchRepos(this.state.value)}
                     />
                 </div>
+                {!error ?
                 <div className='content'>
                     <Profile
                         classPicture='profile-picture'
                         imageUrl={user.avatar_url}
                         name={user.name}
                         bio={user.bio}
-                    ></Profile>
+                    />
                     <Repositories
                         repos={repos}
-                    ></Repositories>
-                </div>
+                    /> 
+                    </div>
+                    : <UserNotFound
+                        erro={error}
+                    />
+                    }
             </div>
         )
     }

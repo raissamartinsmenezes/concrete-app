@@ -1,7 +1,6 @@
 import React from 'react'
 import './Search.scss'
 import searchIcon from '../../assets/icons/search-icon.svg'
-import { Link } from 'react-router-dom'
 
 const Search = (props) => {
     return (
