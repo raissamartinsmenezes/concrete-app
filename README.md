@@ -31,7 +31,7 @@ Done Definition | Done
 --------------- | ------
 The layout must be implemented according to the Zeplin.io specification | ✔️
 A framework is not required, but we recommend React.js | ✔️
-É obrigatório o uso de rotas | ✔️
+Routes required | ✔️
 
 ## Build With
 
@@ -44,8 +44,13 @@ A framework is not required, but we recommend React.js | ✔️
 ## Assets
 
 - CSS
-- Fonts
-- Layout
+- Fonts:
+    - [Google Fonts - Raleway](https://fonts.google.com/specimen/Raleway)
+    - [Online Web Fonts - Monaco](https://www.onlinewebfonts.com/download/440785c689da19fbbdb1346932c8c029)
+- [Layout](https://zpl.io/VxYQp7g)
+- [Github API](https://developer.github.com/v3/) endpoints:
+    - Details of a user: https://api.github.com/users/{username}
+    - Repositórios de um usuário: https://api.github.com/users/{username}/repos
 
 ## Getting Started
 
@@ -69,7 +74,7 @@ or:
 npm install
 ```
 
-if you are using [npm](https://www.npmjs.com/) as package manager instead.
+if you are using [![npm](https://img.shields.io/badge/npm-6.12.1-blue)](https://www.npmjs.com/) or higher as package manager.
 
 <!-- ## Available Scripts
 
@@ -91,7 +96,7 @@ or:
 npm start
 ```
 
-if you are using [npm](https://www.npmjs.com/) as package manager instead.
+if you are using [![npm](https://img.shields.io/badge/npm-6.12.1-blue)](https://www.npmjs.com/) or higher as package manager.
 
 The page will reload if you make edits. You will also see any lint errors in the console.
 
