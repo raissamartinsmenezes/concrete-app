@@ -1,9 +1,10 @@
 import React from 'react';
-import './UserNotFound'
+import './UserNotFound.css'
 
 const UserNotFound = (props) => { 
+    const { erro } = props
     return (
-        <h1 className='user-not-found'>{props.erro}</h1> 
+        <h1 className='user-not-found'>{erro}</h1> 
     )
 }
 

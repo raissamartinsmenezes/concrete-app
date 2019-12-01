@@ -15,8 +15,7 @@ const Profile = (props) => {
             {/* {props.user.map(user => ( */}
                 <div>
                     <UserPhoto 
-                        imageUrl={props.imageUrl}
-                        classPicture={props.classPicture}
+                        avatar_url={props.avatar_url}
                     />
                     <Description
                         title={props.name}
@@ -29,27 +28,27 @@ const Profile = (props) => {
                             icon={organizationIcon}
                             alt='organization icon'
                             classIcon='icon'
-                        >The Galactic Empire</IconText>
+                        >{props.company}</IconText>
                         <IconText
                             icon={locationIcon}
                             alt='organization icon'
                             classIcon='icon'
-                        >Tatooine</IconText>
-                        <IconText
+                        >{props.location}</IconText>
+                        {/* <IconText
                             icon={starIcon}
                             alt='organization icon'
                             classIcon='icon'
-                        >1.000.000</IconText>
+                        >1.000.000</IconText> */}
                         <IconText
                             icon={repositorieIcon}
                             alt='organization icon'
                             classIcon='icon'
-                        >4</IconText>
+                        >{props.public_repos}</IconText>
                         <IconText
                             icon={followersIcon}
                             alt='organization icon'
                             classIcon='icon'
-                        >9.999.999</IconText>
+                        >{props.followers}</IconText>
                     </div>
                 </div>
             {/* ))} */}
