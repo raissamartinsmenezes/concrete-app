@@ -8,7 +8,7 @@
 
 ![concrete-demo](./src/docs/images/concrete-demo.gif)
 
-**[// https://concrete-app.netlify.com //](concrete-app.netlify.com)**
+**[// https://concrete-app.netlify.com //](https://concrete-app.netlify.com)**
 
 ## Challenge Requirements
 
