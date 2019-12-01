@@ -8,7 +8,7 @@
 
 ![concrete-demo](./src/docs/images/concrete-demo.gif)
 
-**[// https://concrete-app.netlify.com //](https://concrete-app.netlify.com)**
+**[https://concrete-app.netlify.com](https://concrete-app.netlify.com)**
 
 ## Challenge Requirements
 
@@ -52,7 +52,7 @@ Routes required | ✔️
 - [Layout](https://zpl.io/VxYQp7g)
 - [Github API](https://developer.github.com/v3/) endpoints:
     - Details of a user: https://api.github.com/users/{username}
-    - Repositórios de um usuário: https://api.github.com/users/{username}/repos
+    - Repositories of a user: https://api.github.com/users/{username}/repos
 
 ## Getting Started
 
