@@ -4,19 +4,34 @@
 
 > a client-side application that consults a GitHub API and the following repositories of a given user. 
 
+## Demo
+
 ![concrete-app](./src/docs/images/concrete-app.gif)
+
+## Challenge Requirements
+
+### Navigation
 
 Navigation | Done
 ---------- | ------
 When searching for a user through github login, direct to search result | ✔️
 If user is found present user details page (Layout result), otherwise display friendly message (Layout NotFound) | ✔️
 
+### Requirements
 
 Requirements | Done
 ------------ | ------
 I as a user wish to search for a GitHub user | ✔️
 I, as a user, want to see the details of this searched user (number of followers, number of followed, avatar image, email and bio) | ✔️
 I, as a user, want to see the listing of this user's repositories that was sought, ordered by the decreasing number of stars | ❌
+
+### Done Definition
+
+Done Definition | Done
+--------------- | ------
+The layout must be implemented according to the Zeplin.io specification | ✔️
+A framework is not required, but we recommend React.js | ✔️
+É obrigatório o uso de rotas | ✔️
 
 ## Build With
 
@@ -34,7 +49,7 @@ I, as a user, want to see the listing of this user's repositories that was sough
 
 ## Getting Started
 
-### Project Requirements
+### Requirements
 
 To run this project you will need [![node-badge](https://img.shields.io/badge/node-v12.13.1-blue)](https://nodejs.org/en/)  installed in your computer, if not you can use the link to redirect to the installer, after that, the environment it will ready for start.
 
@@ -42,11 +57,19 @@ To run this project you will need [![node-badge](https://img.shields.io/badge/no
 
 Download the project or clone it to your PC, after in your terminal, enter the `./concrete-app` directory and run:
 
- `yarn install` > to install all the project dependencies.
+```
+yarn install
+```
+
+to install all the project dependencies.
 
 or:
 
- `npm install` > if you are using [npm](https://www.npmjs.com/) as package manager instead.
+```
+npm install
+```
+
+if you are using [npm](https://www.npmjs.com/) as package manager instead.
 
 <!-- ## Available Scripts
 
@@ -56,11 +79,19 @@ In the project directory `./concrete-app`, you can run: -->
 
 To run the app in the development mode, at `./concrete-app` directory run:
 
-`yarn start` to open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+yarn start
+```
+
+to open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 or:
 
-`npm start` if you are using [npm](https://www.npmjs.com/) as package manager instead.
+```
+npm start
+```
+
+if you are using [npm](https://www.npmjs.com/) as package manager instead.
 
 The page will reload if you make edits. You will also see any lint errors in the console.
 
