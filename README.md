@@ -7,6 +7,7 @@
 ## Demo
 
 ![concrete-demo](./src/docs/images/concrete-demo.gif)
+[CLICK HERE to see on Netlify](concrete-app.netlify.com)
 
 ## Challenge Requirements
 
