@@ -1,10 +1,7 @@
-import React from 'react';
-import './Home.scss';
-// import Logo from '../../components/Logo/Logo';
-// import Search from '../../components/Search/Search';
+import React from 'react'
 import axios from 'axios'
+import './Home.css'
 import SearchBar from '../../components/SearchBar/SearchBar'
-// import { searchRepos } from '../../service/searchRepos'
 
 class Home extends React.Component {
     constructor(props){
@@ -12,9 +9,7 @@ class Home extends React.Component {
         this.state = {
             user: '',
             res: '',
-            // repos: [],
-            error: '',
-            // value: ''
+            error: ''
         }
     }
 
@@ -24,7 +19,6 @@ class Home extends React.Component {
 
     searchUser = async () => {
         const { user } = this.state
-    
         try {
             const { data: res } = await axios.get(
                 `https://api.github.com/users/${user}`
@@ -43,13 +37,6 @@ class Home extends React.Component {
                 error: 'User not found :(',
                 res: ''
             }) 
-            // this.props.history.push({
-            //     pathname: '/result',
-            //     state: {
-            //         ...error
-            //     }
-            // })  
-            // console.log(error)
         }
     }
 
@@ -58,9 +45,8 @@ class Home extends React.Component {
         const { user } = this.state;
         return (
             <div className='container'>
-                {/* <div className='search'> */}
                     <SearchBar
-                        classBar='search'
+                        classBar='search-component-home'
                         contentTitle='Github'
                         contentSpan='Search'
                         classGithub='search-logo'
@@ -74,7 +60,6 @@ class Home extends React.Component {
                         buttonAction={this.searchUser}
                     >
                     </SearchBar>
-                {/* </div> */}
             </div>
         )
     }

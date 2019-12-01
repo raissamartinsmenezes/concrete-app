@@ -6,7 +6,7 @@
 
 ## Demo
 
-![concrete-app](./src/docs/images/concrete-app.gif)
+![concrete-demo](./src/docs/images/concrete-demo.gif)
 
 ## Challenge Requirements
 
@@ -21,7 +21,7 @@ If user is found present user details page (Layout result), otherwise display fr
 
 Requirements | Done
 ------------ | ------
-I as a user wish to search for a GitHub user | ✔️
+I, as a user, wish to search for a GitHub user | ✔️
 I, as a user, want to see the details of this searched user (number of followers, number of followed, avatar image, email and bio) | ✔️
 I, as a user, want to see the listing of this user's repositories that was sought, ordered by the decreasing number of stars | ❌
 
@@ -56,11 +56,11 @@ Routes required | ✔️
 
 ### Requirements
 
-To run this project you will need [![node-badge](https://img.shields.io/badge/node-v12.13.1-blue)](https://nodejs.org/en/)  installed in your computer, if not you can use the link to redirect to the installer, after that, the environment it will ready for start.
+To run this project you will need [![node-badge](https://img.shields.io/badge/node-v12.13.1-blue)](https://nodejs.org/en/) installed in your computer, if you have not, you can click on node badge and the link will redirect to the node page installer, after that the environment it will ready for start.
 
 ### Installation
 
-Download the project or clone it to your PC, after in your terminal, enter the `./concrete-app` directory and run:
+Download the project or clone it, then enter the `./concrete-app` directory and run:
 
 ```
 yarn install
@@ -82,7 +82,7 @@ In the project directory `./concrete-app`, you can run: -->
 
 ### Running
 
-To run the app in the development mode, at `./concrete-app` directory run:
+To run the app in the development mode, enter the `./concrete-app` directory and run:
 
 ```
 yarn start

@@ -1,0 +1,26 @@
+.search-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  width: 650px;
+  height: 50px;
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  color: #5c5c5c;
+  font-size: 20px;
+  padding: 13px 17px;
+}
+  
+.search-button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: #ac53f2;
+}
+
+.shadow {
+  box-shadow: 0 0 4px NaNpx var(--black-40);
+}

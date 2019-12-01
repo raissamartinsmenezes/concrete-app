@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Monaco;
+  src: local(Monaco),
+    url('../../assets/fonts/monaco-regular.woff2') format("woff2"),
+    url('../../assets/fonts/monaco-regular.woff') format("woff"),
+    url('../../assets/fonts/monaco-regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.search-logo {
+  font-family: Monaco;
+  font-size: 60px;
+}
+
+.search-logo-result {
+  font-family: Monaco;
+  font-size: 40px;
+}
+
+.search-span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+
+

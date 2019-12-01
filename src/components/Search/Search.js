@@ -1,5 +1,5 @@
 import React from 'react'
-import './Search.scss'
+import './Search.css'
 import searchIcon from '../../assets/icons/search-icon.svg'
 
 const Search = (props) => {

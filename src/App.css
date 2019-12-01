@@ -1,0 +1,14 @@
+/* Raleway Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway:200i,300,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}

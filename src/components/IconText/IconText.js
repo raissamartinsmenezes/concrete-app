@@ -1,5 +1,5 @@
 import React from 'react';
-import './IconText.scss';
+import './IconText.css';
 
 const IconText = (props) => {
     return (

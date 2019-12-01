@@ -1,10 +1,10 @@
-import React from 'react';
-import './Result.scss'
+import React from 'react'
+import axios from 'axios'
+import './Result.css'
 import UserNotFound from '../../components/UserNotFound/UserNotFound'
 import SearchBar from '../../components/SearchBar/SearchBar'
-import Profile from './Profile/Profile'
-import Repositories from './Repositories/Repositories'
-import axios from 'axios'
+import Profile from './components/Profile/Profile'
+import Repositories from './components/Repositories/Repositories'
 
 class Result extends React.Component {
     constructor(props) {
@@ -15,23 +15,19 @@ class Result extends React.Component {
             res: '',
             error: '',
             value: ''
-            // value: ''
         }
     }
 
     changeUser = user => {
         this.setState({ value: user.target.value })
-      //  console.log()
     }
 
     componentDidMount() {
-            this.searchUser(this.props.location.state.res.login)
-            this.searchRepos(this.props.location.state.res.login)
-
+        this.searchUser(this.props.location.state.res.login)
+        this.searchRepos(this.props.location.state.res.login)
     }
 
     searchRepos = async (user) => {
-        // const { user } = this.state
         console.log(user, 'searchrepos')
         try {
             const { data: repos } = await axios.get(
@@ -40,7 +36,6 @@ class Result extends React.Component {
 
             this.setState({ repos, error: '' })
             console.log(repos)
-            // console.log(this.history.location.state.res.avatar_url)
         } catch (error) {
             this.setState({
                 error: 'User not found :(',
@@ -48,7 +43,6 @@ class Result extends React.Component {
             })
         }
         this.searchUser(user)
-
     }
 
     searchUser = async (user) => {
@@ -62,52 +56,52 @@ class Result extends React.Component {
             console.log(response)
         } catch (error) {
             this.setState({
-                error: 'User not found :('
-                // res: ''
+                error: 'User not found :(',
+                res: ''
             })
         }
     }
-    
+
 
     render() {
-        const { user, repos, error } = this.state;
-        console.log(this.props.location.state.res.avatar_url)
+        const { user, repos, error, value } = this.state;
+        // console.log(this.props.location.state.res.avatar_url)
         return (
             <div className='container'>
-                {/* <div className='search-component-result'>  */}
-                    <SearchBar
+                <SearchBar
                     classBar='search-component-result'
-                        contentTitle='Github'
-                        contentSpan='Search'
-                        classGithub='search-logo-result'
-                        classSearch='search-span'
-                        classInput='search-input'
-                        classButton='search-button'
-                        placeholder='Digite aqui um usuário para consultar seus repositórios'
-                        changeUser={this.changeUser}
-                        user={user}
-                        buttonAction={() => this.searchRepos(this.state.value)}
-                    >
-                    </SearchBar>
+                    contentTitle='Github'
+                    contentSpan='Search'
+                    classGithub='search-logo-result'
+                    classSearch='search-span'
+                    classInput='search-input'
+                    classButton='search-button'
+                    placeholder='Digite aqui um usuário para consultar seus repositórios'
+                    changeUser={this.changeUser}
+                    user={user}
+                    buttonAction={() => this.searchRepos(value)}
+                >
+                </SearchBar>
                 {!error ?
-                <div className='content'>
-                    <Profile
-                        avatar_url={user.avatar_url}
-                        name={user.name}
-                        bio={user.bio}
-                        company={user.company}
-                        location={user.location}
-                        public_repos={user.public_repos}
-                        followers={user.followers}
-                    />
-                    <Repositories
-                        repos={repos}
-                    /> 
+                    <div className='content'>
+                        <Profile
+                            avatar_url={user.avatar_url}
+                            name={user.name}
+                            bio={user.bio}
+                            company={user.company}
+                            location={user.location}
+                            public_repos={user.public_repos}
+                            followers={user.followers}
+                            following={user.following}
+                        />
+                        <Repositories
+                            repos={repos}
+                        />
                     </div>
                     : <UserNotFound
                         erro={error}
                     />
-                    }
+                }
             </div>
         )
     }
