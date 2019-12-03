@@ -33,18 +33,15 @@ class Result extends React.Component {
                 this.setState({ error: this.props.location.state.error})
             }
         }
-
     }
 
     searchRepos = async (user) => {
-        // console.log(user, 'searchrepos')
         try {
             const { data: repos } = await axios.get(
                 `https://api.github.com/users/${user}/repos`
             )
 
             this.setState({ repos, error: '' })
-            // console.log(repos)
         } catch (error) {
             this.setState({
                 error: 'User not found :(',
@@ -55,14 +52,12 @@ class Result extends React.Component {
     }
 
     searchUser = async (user) => {
-        // console.log(user, 'searchUser')
         try {
             const { data: response } = await axios.get(
                 `https://api.github.com/users/${user}`
             )
 
             this.setState({ user: response, error: '' })
-            // console.log(response)
         } catch (error) {
             this.setState({
                 error: 'User not found :(',
@@ -73,7 +68,6 @@ class Result extends React.Component {
 
     render() {
         const { user, repos, error, value } = this.state;
-        // console.log(this.props.location.state.res.avatar_url)
         return (
             <div className='container'>
                 <SearchBar

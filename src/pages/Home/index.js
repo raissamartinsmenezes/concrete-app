@@ -31,7 +31,6 @@ class Home extends React.Component {
                     res
                 }
             })    
-            console.log(res)
         } catch (error) {
             this.setState({
                 error: 'User not found :(',
@@ -43,10 +42,8 @@ class Home extends React.Component {
                     error: 'User not found :('
                 }
             })
-            console.log()
         }
     }
-
 
     render() {
         const { user } = this.state;
