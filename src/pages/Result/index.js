@@ -23,19 +23,28 @@ class Result extends React.Component {
     }
 
     componentDidMount() {
-        this.searchUser(this.props.location.state.res.login)
-        this.searchRepos(this.props.location.state.res.login)
+        if(this.props.location.state){
+            if(this.props.location.state.res){
+            this.searchUser(this.props.location.state.res.login)
+            this.searchRepos(this.props.location.state.res.login)
+            }
+
+            if(this.props.location.state.error){
+                this.setState({ error: this.props.location.state.error})
+            }
+        }
+
     }
 
     searchRepos = async (user) => {
-        console.log(user, 'searchrepos')
+        // console.log(user, 'searchrepos')
         try {
             const { data: repos } = await axios.get(
                 `https://api.github.com/users/${user}/repos`
             )
 
             this.setState({ repos, error: '' })
-            console.log(repos)
+            // console.log(repos)
         } catch (error) {
             this.setState({
                 error: 'User not found :(',
@@ -46,14 +55,14 @@ class Result extends React.Component {
     }
 
     searchUser = async (user) => {
-        console.log(user, 'searchUser')
+        // console.log(user, 'searchUser')
         try {
             const { data: response } = await axios.get(
                 `https://api.github.com/users/${user}`
             )
 
             this.setState({ user: response, error: '' })
-            console.log(response)
+            // console.log(response)
         } catch (error) {
             this.setState({
                 error: 'User not found :(',
@@ -61,7 +70,6 @@ class Result extends React.Component {
             })
         }
     }
-
 
     render() {
         const { user, repos, error, value } = this.state;

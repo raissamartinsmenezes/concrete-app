@@ -37,6 +37,13 @@ class Home extends React.Component {
                 error: 'User not found :(',
                 res: ''
             }) 
+            this.props.history.push({
+                pathname: '/result',
+                state: {
+                    error: 'User not found :('
+                }
+            })
+            console.log()
         }
     }
 
