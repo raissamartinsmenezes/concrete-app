@@ -25,7 +25,7 @@ Requirements | Done
 ------------ | ------
 I, as a user, wish to search for a GitHub user | ✔️
 I, as a user, want to see the details of this searched user (number of followers, number of followed, avatar image, email and bio) | ✔️
-I, as a user, want to see the listing of this user's repositories that was sought, ordered by the decreasing number of stars | ❌
+I, as a user, want to see the listing of this user's repositories that was sought, ordered by the decreasing number of stars | ✔️
 
 ### Done Definition
 
