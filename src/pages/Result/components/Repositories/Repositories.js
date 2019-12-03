@@ -8,7 +8,7 @@ const Repositories = (props) => {
     const { repos } = props
     return (
         <div>
-            {repos.map(repo => (
+            {repos.sort(function (a, b) {return b.stargazers_count - a.stargazers_count}).map(repo => (
                 <div className='repositories-box'>
                     <Description
                         title={repo.name}
