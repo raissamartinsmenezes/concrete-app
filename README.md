@@ -2,9 +2,9 @@
 
 # Concrete Challenge
 
-> a client-side application that consults a GitHub API and the following repositories of a given user. 
+A client-side application that consults a GitHub API and the following repositories of a given user. 
 
-## Demo
+## Sample
 
 ![concrete-demo](./src/docs/images/concrete-demo.gif)
 
@@ -68,9 +68,7 @@ Download the project or clone it, then enter the `./concrete-app` directory and 
 yarn install
 ```
 
-to install all the project dependencies.
-
-or:
+to install all the project dependencies, or:
 
 ```
 npm install
@@ -90,9 +88,7 @@ To run the app in the development mode, enter the `./concrete-app` directory and
 yarn start
 ```
 
-to open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-or:
+to open [http://localhost:3000](http://localhost:3000) to view it in the browser, or:
 
 ```
 npm start
