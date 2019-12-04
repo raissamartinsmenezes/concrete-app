@@ -98,8 +98,7 @@ The page will reload if you make edits. You will also see any lint errors in the
 
 ## Author
 
-[Raissa Martins](https://www.linkedin.com/in/raissamartinsmenezes/) - Front-end Developer | Teacher and Tutor at @reprograma | web full-stack student at @DigitalHouseBrasil
-
+[Raissa Martins](https://www.linkedin.com/in/raissamartinsmenezes/) - front-end developer | teacher and tutor at @reprograma | web full-stack student at @DigitalHouseBrasil
 <!-- ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
