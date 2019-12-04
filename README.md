@@ -4,8 +4,6 @@
 
 A client-side application that consults a GitHub API and the following repositories of a given user. 
 
-## Sample
-
 ![concrete-demo](./src/docs/images/concrete-demo.gif)
 
 **[https://concrete-app.netlify.com](https://concrete-app.netlify.com)**
